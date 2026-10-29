@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Order Summary Card</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon-music.svg">
+  
+  <!-- Google Fonts: Red Hat Display 500, 700, 900 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <article class="order-card">
+      <header class="order-card__hero">
+        <picture>
+          <source srcset="images/illustration-hero@2x.png 2x, images/illustration-hero.png 1x">
+          <img src="images/illustration-hero.png" alt="Person joyfully listening to music with headphones and dance moves" width="327" height="161">
+        </picture>
+      </header>
+
+      <section class="order-card__content">
+        <h1 class="order-card__title">Order Summary</h1>
+        
+        <p class="order-card__description">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+
+        <div class="plan-box">
+          <div class="plan-box__left">
+            <img class="plan-box__icon" src="images/icon-music.svg" alt="" aria-hidden="true" width="48" height="48">
+            <div class="plan-box__text">
+              <strong class="plan-box__title">Annual Plan</strong>
+              <span class="plan-box__price">$59.99/year</span>
+            </div>
+          </div>
+          <a href="#change-plan" class="plan-box__change" aria-label="Change subscription plan">Change</a>
+        </div>
+
+        <div class="order-card__actions">
+          <button type="button" class="btn btn--primary">Proceed to Payment</button>
+          <button type="button" class="btn btn--secondary">Cancel Order</button>
+        </div>
+      </section>
+    </article>
+  </main>
+
+</body>
+</html>
